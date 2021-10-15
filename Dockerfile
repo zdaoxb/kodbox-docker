@@ -5,8 +5,8 @@ RUN set -x \
     && apt-get install -y tzdata \
     && ln -fs /usr/share/zoneinfo/US /etc/localtime \
     && dpkg-reconfigure -f noninteractive tzdata \
-    && apt-get install -y nginx-full sqlite redis unzip\
-    && apt-get install -y php php-fpm php-curl php-gd php-mbstring php-redis php-sqlite3 php-pdo php-mysqli \
+    && apt-get install -y nginx-full sqlite rsync redis  supervisor imagemagick ffmpeg unzip\
+    && apt-get install -y php php-fpm php-curl php-gd php-mbstring php-redis php-sqlite3 php-pdo php-mysqli php-bcmath php-exif php-intl php-ldap php-opcache php-pcntl\
     && apt-get remove --purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
 
