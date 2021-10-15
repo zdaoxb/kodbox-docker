@@ -7,7 +7,6 @@ RUN set -x \
     && dpkg-reconfigure -f noninteractive tzdata \
     && apt-get install -y nginx-full sqlite redis unzip\
     && apt-get install -y php php-fpm php-curl php-gd php-mbstring php-redis php-sqlite3 \
-    && apt-get install -y ImageMagick dcraw ghostscript ffmpeg libjpeg libjpeg-devel libpng libpng-devel libtiff libtiff-devel libungif libungif-devel freetype zlib \
     && apt-get remove --purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
 
