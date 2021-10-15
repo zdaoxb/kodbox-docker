@@ -7,6 +7,7 @@ RUN set -x \
     && dpkg-reconfigure -f noninteractive tzdata \
     && apt-get install -y nginx-full sqlite rsync redis  supervisor imagemagick ffmpeg unzip\
     && apt-get install -y php php-fpm php-curl php-gd php-mbstring php-redis php-sqlite3 php-pdo php-mysqli php-bcmath php-exif php-intl php-ldap php-opcache \
+    && apt-get install -y autoconf freetype-dev icu-dev libevent-dev libjpeg-turbo-dev libmcrypt-dev libpng-dev libxml2-dev libzip-dev openldap-dev pcre-dev libwebp-dev gmp-dev \
     && apt-get remove --purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
 
