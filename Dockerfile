@@ -10,7 +10,7 @@ RUN set -x \
     && apt-get remove --purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
 
-COPY kodbox.1.09.zip /var/www/kodbox.zip
+COPY kodbox.1.20 (2) (2).zip /var/www/kodbox.zip
 COPY kod.conf /etc/nginx/conf.d/
 COPY run.sh /
 RUN set -x \
